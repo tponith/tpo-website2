@@ -1,0 +1,18 @@
+{% load static %}
+<div class="card" style="background: transparent; border-radius: 15px; box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2); padding: 5px;">
+    <div class="card-header" style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
+        <b>Latest Placement news</b></h5>
+    </div>
+    <div class="card-body" style="border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; ">
+        <marquee behavior="scroll" direction="up" autostart scrollamount="3" scrolldelay="0" onmouseover="this.stop();" onmouseout="this.start();">
+            <li>NIT Hamirpur invited applications for the internship program in the different Departments/Centers of the Institute.</li>
+            <hr>
+            <li>The students studying at NIT Hamirpur and outside the Institute can be benefitted from this internship program offered by NIT Hamirpur.</li>
+            <hr>
+            <li>The best internship project/report in each Department/Center will be awarded by the Institute.</li>
+            <hr>
+            <li><a href="{% static 'vpn/uploads/best_Internship_Project.pdf' %}"><span class="blink_me">Best Internship Projects in their respective departments for session 2023-24.</span></a></li>
+        </marquee>
+    </div>
+</div>
+<br>

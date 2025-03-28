@@ -1,0 +1,74 @@
+{% load static %} {% include "vpn/header.html" %} {% include "vpn/navbar.html" %}
+
+<main id="main">
+
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about" class="section-bg">
+        <div class="container-fluid">
+
+            <div class="row"  style="margin-right: 7px;">
+                <div class="col-lg-4 about-img wow fadeInLeft">
+
+                    {% include "vpn/sidebar_slider.html" %} {% include "vpn/forms_invitations.html" %} {% include "vpn/placement_news.html" %}
+
+                </div>
+
+                <div class="col-lg-8 content wow fadeInRight card border-light card-container">
+
+                    <div class="section-header">
+                        <h1 class="section-title">Contact Us</h1>
+                        <span class="section-divider"></span>
+                    </div>
+
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th scope="row"><i class="ion-ios-arrow-forward"></i><i class="ion-ios-email-outline"></i>Email id's:</th>
+                                <td colspan="2">
+                                    <ul>
+                                        <li><i class="ion-android-arrow-dropright"></i><a href="mailto:tpo@nith.ac.in" target="_top">tpo@nith.ac.in</a></li>
+                                        <li><i class="ion-android-arrow-dropright"></i><a href="mailto:tponith@gmail.com" target="_top">tponith@gmail.com</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><i class="ion-ios-arrow-forward"></i><i class="ion-ios-telephone-outline"></i>Phone no's:</th>
+                                <td colspan="2">
+                                    <ul>
+                                        <li><i class="ion-android-arrow-dropright"></i>01972-254591 (Office)</li>
+                                        <li style="color: green;"><i class="ion-android-arrow-dropright">Primary Point of Contact: </i> Dr Somesh Sharma - 9805715100 (Mobile)</li>
+                                        <li style="color: red;"><i class="ion-android-arrow-dropright">Secondary Point of Contact: </i> Chandradev Raj - 6396749869  (Mobile)</li>
+                                        <li><i class="ion-android-arrow-dropright">Point of Contact for Circuital Branches:</i> Hardik Sachdeva- 8476092720 (Mobile)</li>
+                                        <li><i class="ion-android-arrow-dropright">Point of Contact for Core Branches:</i>Manpreet Singh - 7876603406 (Mobile)</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><i class="ion-ios-arrow-forward"></i><i class="ion-ios-location-outline"></i>Address:</th>
+                                <td colspan="2">
+                                    <ul>
+                                        <li><i class="ion-android-arrow-dropright"></i>Dr.Somesh Sharma
+                                            <br> Training and Placement Officer
+                                            <br> National Institute Of Technology, Hamirpur
+                                            <br> Hamirpur, Himachal Pradesh
+                                            <br> PIN 177 005
+                                            <br> India </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- #about -->
+    {% include "vpn/company_slider.html" %}
+
+</main>
+
+{% include "vpn/footer.html" %}

@@ -1,0 +1,93 @@
+{% load static %} {% include "vpn/header.html" %} {% include "vpn/navbar.html" %}
+
+<main id="main">
+
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about" class="section-bg">
+        <div class="container-fluid">
+
+            <div class="row" style="margin-right: 7px;">
+                <div class="col-lg-4 about-img wow fadeInLeft">
+
+                    {% include "vpn/internship_opportunities.html" %} {% include "vpn/sidebar_slider.html" %} {% include "vpn/placement_news.html" %}
+
+                </div>
+
+                <div class="col-lg-8 content wow fadeInRight card border-light card-container">
+
+                    <div class="section-header">
+                        <h1 class="section-title">Training and Placement opportunities at NIT Hamirpur</h1>
+                        <span class="section-divider"></span>
+                        <p>National Institute of Technology Hamirpur invites applications from the students studying in IITs/NITs/State Technical Universities/Other CFTIs, to do Summer Training/Internship in the different departments/centres of Institute. The preference should be given to the students from top 100 NIRF ranked Institutes/Universities in India. There are various projects under which the candidates can apply. The applicant must submit a brief proposal on the project area under which he/she intends to do internship/training at NIT Hamirpur (HP). For more details, please go through attached <a href="{% static 'vpn/uploads/Guidelines.pdf' %}">Guidelines</a>. The candidate can fill the “<a href="{% static 'vpn/uploads/Internship_Request_Form.pdf' %}"> the internship request form</a>” along with “<a href="{% static 'vpn/uploads/Internship_Undertaking_Form.pdf' %}">Undertaking performa</a>” and mail to Training & Placement Office NIT Hamirpur at tpo@nith.ac.in
+                            <br> The candidates can also apply in the department/centre/project which is not mentioned in the list. If the facility/faculty will be available in the willing area (other than mentioned in the list of projects or department/centre), the candidate will be permitted to do Internship in that department/centre of NIT Hamirpur (HP).
+                            <br> For more details contact 01972-254591/254590 and tpo@nith.ac.in.</p>
+                    </div>
+                    <hr>
+
+                    <div class="container py-2">
+                        <!-- timeline item 1 -->
+                        <div class="row ">
+                            <!-- timeline item 1 left dot -->
+                            <!-- timeline item 1 event content -->
+                            <div class="col py-2">
+                                <div class="card">
+                                    <div style="background-color: #52BE80;" class="card-body">
+                                        <h4 class="card-title">Step 1 -</h4>
+                                        <p class="card-text">Students from different institutions, aiming for internship programs at NIT Hamirpur, are advised to go through the <a href="{% static 'vpn/uploads/Guidelines.pdf' %}">internship guidelines</a> before applying.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/row-->
+                        <!-- timeline item 3 -->
+                        <div class="row">
+                            <div class="col py-2">
+                                <div class="card">
+                                    <div style="background-color: #F1c40f;" class="card-body">
+                                        <h4 class="card-title">Step 2 -</h4>
+                                        <p>Students must fill <a href="{% static 'vpn/uploads/Internship_Undertaking_Form.pdf' %}">Undertaking performa</a> duly forwarded by the Parent institution.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/row-->
+                        <!-- timeline item 3 -->
+                        <div class="row">
+                            <div class="col py-2">
+                                <div class="card">
+                                    <div style="background-color: #52BE80;" class="card-body">
+                                        <h4 class="card-title">Step 3 -</h4>
+                                        <p>The interested students after filling <a href="{% static 'vpn/uploads/Internship_Request_Form.pdf' %}"> the internship request form</a>, can apply through mail at <a href="mailto:tpo@nith.ac.in">tpo@nith.ac.in</a> or personally. After receiving application through mail, the Office of Training and Placement will give date to the candidate to visit NIT Hamirpur for completing the requisite formalities.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/row-->
+                        <!-- timeline item 4 -->
+                        <div class="row">
+                            <div class="col py-2">
+                                <div class="card">
+                                    <div style="background-color: #F1c40f;" class="card-body">
+                                        <h4 class="card-title">Step 4 -</h4>
+                                        <p>The institute will release the final consent to the candidate after completing financial and documented formalities.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/row-->
+                    </div>
+                    <!--container-->
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- #about -->
+    {% include "vpn/company_slider.html" %}
+
+</main>
+
+{% include "vpn/footer.html" %}

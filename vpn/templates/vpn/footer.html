@@ -1,0 +1,55 @@
+{% load static %}
+<!--==========================
+    Footer
+  ============================-->
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 text-lg-left text-center">
+                <div class="copyright">
+                    &copy; Copyright: <strong>National Institute of Technology, Hamirpur</strong>. All Rights Reserved.
+                </div>
+
+            </div>
+            <div class="col-lg-6">
+                <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
+                    Made with <i style='color:yellow' class='fa fa-heart blink_me'></i> by  Rishab.
+                    <br>
+                    Maintaned by  Mehul and Ashmit.
+                </nav>
+            </div>
+
+        </div>
+    </div>
+</footer>
+<!-- #footer -->
+
+<a href="#" class="back-to-top" title="Back to top"><i class="fa fa-chevron-up"></i></a>
+
+<!-- JavaScript Libraries -->
+<script src="{% static 'vpn/lib/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'vpn/lib/jquery/jquery-migrate.min.js' %}"></script>
+<script src="{% static 'vpn/lib/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'vpn/lib/easing/easing.min.js' %}"></script>
+<script src="{% static 'vpn/lib/wow/wow.min.js' %}"></script>
+<script src="{% static 'vpn/lib/superfish/hoverIntent.js' %}"></script>
+<script src="{% static 'vpn/lib/superfish/superfish.min.js' %}"></script>
+<script src="{% static 'vpn/lib/magnific-popup/magnific-popup.min.js' %}"></script>
+<!-- <script src="https://unpkg.com/@studio-freight/lenis@latest/bundled/lenis.min.js"></script> -->
+
+<script src="{% static 'vpn/js/main.js' %}"></script>
+
+<script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script> 
+<script>
+const lenis = new Lenis({
+  autoRaf: true,
+});
+
+lenis.on('scroll', (e) => {
+//   console.log(e);
+});
+</script>
+
+</body>
+
+</html>

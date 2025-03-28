@@ -1,0 +1,37 @@
+{% load static %} {% include "vpn/header.html" %} {% include "vpn/navbar.html" %}
+
+<main id="main">
+
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about" class="section-bg">
+        <div class="container-fluid">
+        <center>
+            <div class="row">
+                <div class="col-lg-12 about-img wow fadeInLeft">
+
+                    <div class="section-header">
+                        <h1 class="section-title"><br><br>
+            <span class="blink_me">ERROR 404</span><br><span class="section-description">This is not the page you are looking for. There is something wrong with the URL.<br>Please sit back and relax while our team of highly trained developers works on the issue.</span></h1><img src="{% static 'vpn/img/404.png' %}" /></center>
+
+                    </div>
+            
+                        <center><img style="width: 120px;" src="{% static 'vpn/img/logo.png' %}" /><br><br>You might be interested in visiting the following - <br><br></center>
+
+                        <a href="/">Home</a> | <a href="/directors-desk/">Director's Desk</a> | <a href="/training-Placement-Office/">Training and Placement Office</a> | <a href="/functionaries/">Functionaries</a><br> 
+                        <a href="/placement-procedure/">Placement Procedure</a> | <a href="/placement-record/">Placement Record</a> | <a href="/past-recruiters/">Past Recruiters</a> | <a href="/facilities/">Facilities for Recruiters at NIT Hamirpur</a> <br>
+                        <a href="/internship-procedure/">Internship Procedure for Internal students</a> | <a href="/training-internship-opportunities/">Training/Internship Opportunities at NITH</a> <br>
+                        <a href="#">Prospective Students</a> | <a href="/contact/">Contact Us</a> | <a href="/how-to-reach/">How To Reach NIT Hamirpur</a> <br>
+                    
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- #about -->
+    {% include "vpn/company_slider.html" %}
+
+</main>
+{% include "vpn/footer.html" %}

@@ -1,0 +1,26 @@
+{% load static loadimages %}
+<section id="clients">
+    <script src="{% static 'vpn/lib/jquery/jquery.min.js' %}"></script>
+<center><h2>Present Recruiters</h2></center>
+    <div class="row wow fadeInRight" style="margin-bottom: 10px;">
+        <div id="container1">
+            <ul id="imgs">
+                {% img_names as queries %}
+                {% for query in queries %}
+                <li><img src="{% static 'vpn/img/companies/' %}{{ query }}" alt="Company logo - {{ query }}"></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <script src="{% static 'vpn/js/ImageScroll.js' %}"></script>
+        <script type="text/javascript">
+            $('#imgs').imageScroll({
+                orientation: "left",
+                speed: 400,
+                interval: 1200,
+                hoverPause: false,
+            });
+        </script>
+
+    </div>
+</section>
+<!-- #more-features -->

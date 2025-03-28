@@ -1,0 +1,73 @@
+{% load static %} {% include "vpn/header.html" %} {% include "vpn/navbar.html" %}
+
+<!--==========================
+    Intro Section
+  ============================-->
+  <!-- 
+<section id="intro" class="home">
+
+    <div class="intro-text1">
+        <a href="#about" style="margin-left: 68px;" class="btn-get-started scrollto">Get Started</a>
+    </div>
+</section>
+
+<img style="margin-left: -55" src="{% static 'vpn/img/patterns/pattern.png' %}">
+-->
+
+<div id="preloader">
+    <div class="logo-container">
+        <img src="{% static 'vpn/img/logo.png' %}" alt="Logo" class="preloader-logo">
+    </div>
+    <div class="preloader-text">
+        <span class="word">Training</span>
+        <span class="word">and </span>
+        <span class="word">Placement</span>
+        <span class="word">Office,</span>
+        <span class="word">NIT Hamirpur</span>
+    </div>
+</div>
+<main id="main">
+
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about" class="section-bg">
+        <div class="container-fluid" >
+
+            <div class="row" style="margin-right: 7px;">
+                <div class="col-lg-4 about-img wow fadeInLeft">
+
+                    {% include "vpn/placement_breifs.html" %} {% include "vpn/sidebar_slider.html" %} {% include "vpn/placement_news.html" %}
+
+                </div>
+
+                <div class="col-lg-8 content wow fadeInRight card card-container">
+
+                    <div class="section-header" >
+                        <h1 class="section-title"><img style="width: 120px;" src="{% static 'vpn/img/logo.png' %}" /><br><br>Training and Placement Office</h1>
+                        <span class="section-divider"></span>
+                    </div>
+
+                    <p style="text-align: justify;">Please accept best Greetings from NIT Hamirpur!
+                        <br> We take this proud opportunity to invite your esteemed organization to participate in our campus placement process for the session 2023-24.
+                        <br> National Institute of Technology Hamirpur is the Technological Hub of our Green and Clean Himachal Pradesh and it offers peaceful and serene environment for the academic growth. Over a period of time, the Institute has made its place amongst the leading technical institutions of the country. Institute offers Ph. D., M.Tech/M.Arch., MBA, B.Arch and accredited B.Tech programs in Computer Science, Mathematics and Scientific Computing , Electronics , Electrical , Civil , Mechanical, Chemical, Engineering Physics and Material Science Engineering, it also offers Dual Degree programs in Computer Science and Electronics & Communication Engineering that justify our reputation as a centre of higher learning. Excellent infrastructure, congenial teaching learning ambience, committed faculty, significant contribution to research work and commitment to the community are our hallmark.
+                        <br> We are highly grateful that you aim to get associate with NIT Hamirpur for recruiting our students. We hope that this association of our Institute with your reputed Organization will go long way towards the growth of industry, academia and Nation itself.
+                        <br>
+                        <br> With Warm regards,
+                        <br> Training and Placement Office
+                        <br> NIT Hamirpur
+                        <br> Email: <a href="mailto:tpo@nith.ac.in">tpo@nith.ac.in</a>
+                        <br> 01972-254591, 254590
+                        <br> 9805715100
+                        <br>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- #about -->
+    {% include "vpn/company_slider.html" %}
+
+</main>
+
+{% include "vpn/footer.html" %}
