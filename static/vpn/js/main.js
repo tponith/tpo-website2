@@ -13,7 +13,7 @@ jQuery(document).ready(function($) {
   $('.back-to-top').click(function() {
     $('html, body').animate({
       scrollTop: 0
-    }, 0, 'easeInOutExpo');
+    }, 1500, 'easeInOutExpo');
     return false;
   });
 
@@ -158,3 +158,35 @@ function blinkerit() {
 setInterval(blinkerit, 2000);
 
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  setTimeout(() => {
+      // After words appear, wait for 1.5s before fade out
+      setTimeout(() => {
+          document.getElementById("preloader").style.animation = "fadeOut 1s ease-in-out forwards";
+
+          // Show main content after preloader fades away
+          setTimeout(() => {
+              document.getElementById("preloader").style.display = "none";
+              document.getElementById("main").style.display = "block";
+          }, 1000); 
+
+      }, 1800); 
+  }, 1700); 
+});
+
+// window.addEventListener("load", () => {
+//   document.body.classList.add("no-scroll"); // Prevents trackpad scrolling
+
+//   setTimeout(() => {
+//     document.getElementById("preloader").style.opacity = "0";
+    
+//     setTimeout(() => {
+//       document.getElementById("preloader").style.display = "none";
+//       document.body.classList.remove("no-scroll"); // Restores trackpad scrolling
+//       document.body.classList.add("loaded");
+//     }, 1000);
+    
+//   }, 2000); 
+// });
