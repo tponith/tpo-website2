@@ -16,12 +16,15 @@ Including another URLconf
 from django.urls import include, path, re_path
 from django.contrib import admin
 from django.conf.urls import handler404, handler500
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     # VPN interface is the default interface
     re_path(r'', include('vpn.urls')),
     re_path(r'^about/', include('vpn.urls')),
     re_path(r'^contact/', include('vpn.urls')),
+    re_path(r'^feedback/', include('vpn.urls')),
     re_path(r'^facilities/', include('vpn.urls')),
     re_path(r'^invitation/', include('vpn.urls')),
     re_path(r'^how-to-reach/', include('vpn.urls')),
@@ -36,6 +39,9 @@ urlpatterns = [
     #admin interface
     re_path(r'^admin/', admin.site.urls),
 ]
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
 
 handler404 = 'vpn.views.handler404'
 handler500 = 'vpn.views.handler500'

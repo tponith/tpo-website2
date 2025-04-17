@@ -21,6 +21,7 @@ urlpatterns = [
     re_path(r'^$', views.index, name='index'),
     re_path(r'^about/', views.about, name='about'),
     re_path(r'^contact/', views.contact, name='contact'),
+    # re_path(r'^feedback/', views.feedback, name='feedback'),
     re_path(r'^facilities/', views.facilities, name='facilities'),
     re_path(r'^invitation/', views.invitation, name='invitation'),
     re_path(r'^how-to-reach/', views.reach, name='reach'),
@@ -34,4 +35,6 @@ urlpatterns = [
     re_path(r'^past-recruiters/', views.recruiters, name='recruiters'),
     re_path(r'^internship-procedure/', views.internship, name='internship'),
     re_path(r'^training-internship-opportunities/', views.opportunities, name='opportunities'),
+    re_path(r'^feedback/', views.feedback_page, name='feedback_page'),
+    # re_path(r'^feedback/submit/', views.feedback_submit, name='feedback_submit'),
 ]

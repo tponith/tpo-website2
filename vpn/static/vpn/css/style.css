@@ -397,10 +397,10 @@ li  {
 .above-nav{
   height: 92px;
   top: 0;
-  //background: linear-gradient(45deg, #1de099, #1dc8cd);
-  //background-color: #E5E7E9;
+  /* background: linear-gradient(45deg, #1de099, #1dc8cd);
+  background-color: #E5E7E9; */
   background-color: white;
-  //background:url(../img/patterns/pattern2.jpg) fixed center center;
+  /* background:url(../img/patterns/pattern2.jpg) fixed center center; */
   display: block;
   z-index: 999;
 }
