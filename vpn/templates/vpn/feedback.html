@@ -4,11 +4,11 @@
 
 <main id="main">
   <section id="about" class="section-bg" style="margin-top:30px;">
-    <div class="container">
+    <div class="container-fluid">
       <h2>Recruiter's Words about NIT Hamirpur</h2>
       {% if image_feedbacks %}
-        <div id="imageCarousel" class="carousel slide mb-5" data-ride="carousel" data-interval="5000">
-          <div class="carousel-inner">
+        <div id="imageCarousel" class="carousel slide mb-5 wow fadeInLeft" data-ride="carousel" data-interval="5000">
+          <div class="carousel-inner ">
             {% for fb in image_feedbacks %}
               {% if forloop.counter0|divisibleby:2 %}
                 <div class="carousel-item {% if forloop.first %}active{% endif %}">
@@ -45,7 +45,7 @@
       {% endif %}
       
       <h2>Video Testimonials</h2>
-      <div class="row">
+      <div class="row wow fadeInLeft">
         {% for fb in video_feedbacks %}
           <div class="col-md-4">
             <div class="card mb-4" >
