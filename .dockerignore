@@ -1,0 +1,19 @@
+# ignore Python cache, virtualenvs, IDE files, etc.
+__pycache__/
+*.py[cod]
+*.log
+
+# ignore venv or any other local env
+venv/
+.env/
+
+# ignore node modules if you ever have frontend code here
+node_modules/
+
+# ignore your IDE/editor directories
+.vscode/
+.idea/
+
+# ignore collected static—Django will re-collect it inside the image
+staticfiles/
+media/

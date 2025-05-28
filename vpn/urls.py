@@ -35,6 +35,6 @@ urlpatterns = [
     re_path(r'^past-recruiters/', views.recruiters, name='recruiters'),
     re_path(r'^internship-procedure/', views.internship, name='internship'),
     re_path(r'^training-internship-opportunities/', views.opportunities, name='opportunities'),
-    re_path(r'^feedback/', views.feedback_page, name='feedback_page'),
+    # re_path(r'^feedback/', views.feedback_page, name='feedback_page'),
     # re_path(r'^feedback/submit/', views.feedback_submit, name='feedback_submit'),
 ]

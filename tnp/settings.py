@@ -26,7 +26,7 @@ SECRET_KEY = 'z!w9pzi!lj!72rl#5jkr6v+j3r=!)-!kb2ohlk!nq2(vuhvljq'
 DEBUG = True
 
 #ALLOWED_HOSTS = ['159.89.167.123','localhost','127.0.0.1','0.0.0.0']
-ALLOWED_HOSTS = ['tpo.nith.ac.in','http://tpo.nith.ac.in','127.0.0.1', 'localhost', '159.89.167.123', '0.0.0.0']
+ALLOWED_HOSTS = ['tpo.nith.ac.in','http://tpo.nith.ac.in','127.0.0.1', 'localhost', '14.139.56.17', '0.0.0.0']
 
 
 # Application definition
@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -144,7 +145,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, "static/")
+STATIC_ROOT = os.path.join(BASE_DIR, "/staticfiles/")
+# STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

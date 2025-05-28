@@ -24,7 +24,7 @@ urlpatterns = [
     re_path(r'', include('vpn.urls')),
     re_path(r'^about/', include('vpn.urls')),
     re_path(r'^contact/', include('vpn.urls')),
-    re_path(r'^feedback/', include('vpn.urls')),
+    # re_path(r'^feedback/', include('vpn.urls')),
     re_path(r'^facilities/', include('vpn.urls')),
     re_path(r'^invitation/', include('vpn.urls')),
     re_path(r'^how-to-reach/', include('vpn.urls')),
