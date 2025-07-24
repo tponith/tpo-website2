@@ -17,3 +17,6 @@ node_modules/
 # ignore collected static—Django will re-collect it inside the image
 staticfiles/
 media/
+
+database/
+skillful-garden-359413-62d6073885be.json

@@ -45,3 +45,7 @@ coverage.xml
 
 # PyBuilder
 target/
+
+
+database/
+skillful-garden-359413-62d6073885be.json
