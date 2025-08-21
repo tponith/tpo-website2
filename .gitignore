@@ -1,3 +1,5 @@
+venv/
+
 #custom ignored files
 tnp/database.cnf
 .idea/
